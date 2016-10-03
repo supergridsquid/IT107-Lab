@@ -20,20 +20,27 @@ def acos(x):
 
 def atan(x):
 	print(math.atan(x))
+	
+	
+def main()
+	func = input("Which function?\nsqrt = s\narcsin = a\narccos = c\narctan = t\n")
 
-func = input("Which function?\nsqrt = s\narcsin = a\narccos = c\narctan = t\n")
+	inp = int(input("Enter number to calculate: "))
+	
+	if func == "s":
+		sqrt(inp)
 
-inp = input("Enter number to calculate: ")
-inp = float(inp)
+	elif func == "a":
+		asin(inp)
 
-if func == "s":
-	sqrt(inp)
+	elif func == "c":
+		acos(inp)
 
-elif func == "a":
-	asin(inp)
+	elif func == "t":
+		atan(inp)
+		
+		
+if __name__ == "__main__":
+	main()
 
-elif func == "c":
-	acos(inp)
 
-elif func == "t":
-	atan(inp)
